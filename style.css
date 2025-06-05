@@ -1,0 +1,120 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+}
+
+header {
+    background: linear-gradient(to right, #003366, #004080);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-left: 5px solid #003366;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 5px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #003366;
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    border: 3px solid #003366;
+}
+
+.button {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0055a5;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+/* Logos dans les coins */
+.logo-corner {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.logo-left {
+    left: 10px;
+}
+
+.logo-right {
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    .logo-corner {
+        width: 70px;
+    }
+}
